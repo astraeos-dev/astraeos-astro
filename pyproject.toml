@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "astraeos-astro"
+dynamic = ["version"]
+description = "The Sun's position in pure Python, ported from libastro, the C core of PyEphem"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "src/astraeos_astro/LICENSE.txt"]
+authors = [{ name = "Gregory" }]
+keywords = ["astronomy", "ephemeris", "sun", "vsop87", "libastro", "pyephem"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+# PyEphem is only the reference the tests compare against
+test = ["pytest", "ephem"]
+
+[project.urls]
+Homepage = "https://github.com/astraeos-dev/astraeos-astro"
+Issues = "https://github.com/astraeos-dev/astraeos-astro/issues"
+
+[tool.hatch.version]
+path = "src/astraeos_astro/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "scripts", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

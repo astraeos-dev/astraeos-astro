@@ -3,27 +3,12 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
-import importlib
-from pathlib import Path
 import random
-import sys
-import types
 
 import pytest
 
-# Import the package without the integration's __init__, which needs Home Assistant
-if "astraeos_helios" not in sys.modules:
-    _package = types.ModuleType("astraeos_helios")
-    _package.__path__ = [
-        str(
-            Path(__file__).resolve().parents[1]
-            / "custom_components"
-            / "astraeos_helios"
-        )
-    ]
-    sys.modules["astraeos_helios"] = _package
-astro = importlib.import_module("astraeos_helios.astro")
-timescales = importlib.import_module("astraeos_helios.astro.timescales")
+import astraeos_astro as astro
+from astraeos_astro import timescales
 
 
 def _angle_between(a: float, b: float) -> float:

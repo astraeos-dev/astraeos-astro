@@ -5,7 +5,7 @@ folder of a PyEphem source distribution, such as ephem-4.2.1/libastro:
 
     python scripts/extract_libastro.py path/to/libastro
 
-It rewrites the _*_data.py modules of custom_components/astraeos_helios/astro.
+It rewrites the _*_data.py modules of src/astraeos_astro.
 """
 
 from __future__ import annotations
@@ -14,12 +14,7 @@ from pathlib import Path
 import re
 import sys
 
-ASTRO = (
-    Path(__file__).resolve().parents[1]
-    / "custom_components"
-    / "astraeos_helios"
-    / "astro"
-)
+ASTRO = Path(__file__).resolve().parents[1] / "src" / "astraeos_astro"
 SOURCE = "libastro from PyEphem 4.2.1 (MIT license, see LICENSE.txt)"
 NUMBER = r"[-+]?\d+(?:\.\d*)?(?:[eE][-+]?\d+)?"
 
