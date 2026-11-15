@@ -1,10 +1,25 @@
-# astraeos-astro
+<p align="center"><img src="https://raw.githubusercontent.com/astraeos-dev/astraeos-astro/main/assets/brand/icon.svg" width="128" height="128" alt="astraeos-astro"></p>
 
-The Sun's position in pure Python, ported from libastro, the C core of [PyEphem](https://rhodesmill.org/pyephem/).
+# astraeos-astro — the Sun's position in pure Python
 
-It needs nothing but the Python standard library, so it installs anywhere Python runs, with no compiler. It matches PyEphem to within a few thousandths of an arcsecond. [Helios](https://github.com/astraeos-dev/Helios), a Home Assistant integration, computes the Sun with it.
+> The Sun's position in pure Python, ported from libastro, the C core of [PyEphem](https://rhodesmill.org/pyephem/).
+
+[![PyPI](https://img.shields.io/pypi/v/astraeos-astro?label=version&color=f2b84b)](https://pypi.org/project/astraeos-astro/)
+[![Tests](https://github.com/astraeos-dev/astraeos-astro/actions/workflows/tests.yml/badge.svg)](https://github.com/astraeos-dev/astraeos-astro/actions/workflows/tests.yml)
+[![MIT licence](https://img.shields.io/github/license/astraeos-dev/astraeos-astro?label=licence)](https://github.com/astraeos-dev/astraeos-astro/blob/main/LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)
+
+<a href="https://buymeacoffee.com/gregorychau"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="40"></a>
+
+**Install**: `pip install astraeos-astro`. An idea, a problem? [Open a request](https://github.com/astraeos-dev/astraeos-astro/issues/new/choose).
+
+**Active project** · one of the Astraeos projects: [website](https://astraeos-dev.github.io/personnal-site/#/astraeos-astro) · [Helios](https://github.com/astraeos-dev/Helios) · [Céleste](https://github.com/astraeos-dev/Celeste_App) · [Océanos](https://github.com/astraeos-dev/Oc-anos)
 
 *Read this in: [English](#english) | [Français](#français)*
+
+---
+
+It needs nothing but the Python standard library, so it installs anywhere Python runs, with no compiler. It matches PyEphem to within a few thousandths of an arcsecond. [Helios](https://github.com/astraeos-dev/Helios), a Home Assistant integration, computes the Sun with it.
 
 ## English
 
