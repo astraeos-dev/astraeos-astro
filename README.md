@@ -13,7 +13,7 @@
 
 **Install**: `pip install astraeos-astro`. An idea, a problem? [Open a request](https://github.com/astraeos-dev/astraeos-astro/issues/new/choose).
 
-**Active project** · one of the Astraeos projects: [website](https://astraeos-dev.github.io/personnal-site/#/astraeos-astro) · [Helios](https://github.com/astraeos-dev/Helios) · [Céleste](https://github.com/astraeos-dev/Celeste_App) · [Océanos](https://github.com/astraeos-dev/Oc-anos)
+**Active project** · one of the Astraeos projects: [website](https://astraeos-dev.github.io/Gaia/#/astraeos-astro) · [Helios](https://github.com/astraeos-dev/Helios) · [Céleste](https://github.com/astraeos-dev/Celeste_App) · [Océanos](https://github.com/astraeos-dev/Oc-anos)
 
 *Read this in: [English](#english) | [Français](#français)*
 
